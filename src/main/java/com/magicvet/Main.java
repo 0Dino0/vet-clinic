@@ -21,7 +21,7 @@ public class Main {
                 accepted=true;
                 break;
             } else {
-                System.out.println("Acces denied. Please check your password.");
+                System.out.println("Access denied. Please check your password.");
             }
         }
 
