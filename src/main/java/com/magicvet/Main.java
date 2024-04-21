@@ -58,13 +58,16 @@ public class Main {
         client.email = email;
 
         System.out.print("First name: ");
-        client.firstName = SCANNER.nextLine();
+        String firstName = SCANNER.nextLine();
+        client.setFirstName(firstName);
 
         System.out.print("Last name: ");
-        client.lastName = SCANNER.nextLine();
+        String lastName = SCANNER.nextLine();
+        client.setLastName(lastName);
 
         return client;
     }
+
 
     static boolean isEmailValid(String email) {
         Pattern pattern = Pattern.compile(EMAIL_PATTERN);
